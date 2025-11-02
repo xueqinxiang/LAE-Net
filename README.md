@@ -7,7 +7,7 @@ Official Pytorch implementation for our paper [LAE-Net: Large Pretrained Models 
 
 ---
 
-<img src="frame.jpeg" width="3259px" height="2217px"/>
+<img src="frame.jpg" width="3259px" height="2217px"/>
 
 ---
 
