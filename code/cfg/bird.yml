@@ -1,0 +1,53 @@
+CONFIG_NAME: bird
+
+dataset_name: birds
+data_dir: ../data/birds
+
+gpu_id: 0
+imsize: 256
+z_dim: 100
+cond_dim: 256
+manual_seed: 100
+cuda: True
+
+clip4evl: {'src':"clip", 'type':'ViT-B/32'} #cond_dim: 512
+clip4trn: {'src':"clip", 'type':'ViT-B/32'}
+clip4text: {'src':"clip", 'type':'ViT-B/32'}
+
+stamp: 'normal'
+state_epoch: 0
+max_epoch: 2000
+batch_size: 24 #ViT-B/32 #16 ViT-L/14
+nf: 64
+ch_size: 3
+
+model: base
+sim_w: 4.0
+pept_w: 0.05 #1.0 0618 #10.0 0615 #10.0 #0510 #40.0
+
+gen_interval: 1
+test_interval: 5
+save_interval: 10
+
+truncation: True
+trunc_rate: 0.88
+
+sample_times: 1
+npz_path: ../data/birds/npz/bird_val256_FIDK0.npz
+
+
+example_captions: ./examples/bird/Cedar_Waxwing_0130_178308.txt
+example_images: ./examples/bird/Cedar_Waxwing_0130_178308.jpg
+#example_captions: ../data/birds/text/180.Wilson_Warbler/Wilson_Warbler_0054_175285.txt
+#example_images: ../data/birds/CUB_200_2011/images/180.Wilson_Warbler/Wilson_Warbler_0054_175285.jpg
+samples_save_dir: ./samples/bird/
+checkpoint: ./saved_models/bird/pretrained/state_epoch_1990_0615_w1.pth
+
+save_image: False
+val_save_dir: ./vals/bird/
+
+TEXT:
+    WORDS_NUM: 18
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 5
+    DAMSM_NAME: ../data/birds/DAMSMencoder/text_encoder200.pth
