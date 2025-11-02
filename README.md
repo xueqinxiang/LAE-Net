@@ -1,15 +1,16 @@
-# DE-Net
+# LAE-Net
+[![License CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC4.0-blue.svg)](https://github.com/tobran/DF-GAN/blob/master/LICENSE.md)
+![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg)
+![Packagist](https://img.shields.io/badge/Pytorch-1.9.0-red.svg)
+![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
+# LAE-Net: Large Pretrained Models Assistant Text-Guided Image Editing Adversarial Network
+Official Pytorch implementation for our paper [LAE-Net: Large Pretrained Models Assistant Text-Guided Image Editing Adversarial Network]
 
-Official Pytorch implementation for our paper [LAE-Net: Large Pretrained Models Assistant Text-Guided Image Editing Adversarial Network]. 
+# Framework 
+<img src="frame.jpg" width="3259px" height="2217px"/>
 
 # Samples
 <img src="results.jpg" width="5671px" height="2049px"/>
-
----
-
-<img src="frame.jpg" width="3259px" height="2217px"/>
-
----
 
 ## Requirements
 - python 3.8
